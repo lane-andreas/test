@@ -20,6 +20,7 @@ body {
   top: 0;
   border-top-left-radius: 50%;
   pointer-events: none;
+  transition: 0.1s;
 }
 
 .lines {
