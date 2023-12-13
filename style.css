@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  overflow: clip;
+}
+
+.follower {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  box-shadow: 0 0 100vh 20px black;
+  top: 0;
+  border-top-left-radius: 50%;
+  pointer-events: none;
+}
+
+.lines {
+  background-color: transparent;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  display: flex;
+  flex-grow: 1;
+  gap: 1px;
+}
+.line {
+  flex-basis: 100%;
+  background-color: white;
+}
