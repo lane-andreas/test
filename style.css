@@ -12,6 +12,7 @@
 
 body {
   height: 100vh;
+  height: 100svh;
   width: 100vw;
   background-color: white;
   overflow-x: clip;
@@ -31,6 +32,7 @@ button {
   position: fixed;
   width: 100vw;
   height: 100vh;
+  height: 100svh;
   background-color: #000000;
   box-shadow: 0 0 90vh 10vh black;
 
@@ -47,6 +49,7 @@ button {
   left: 0;
   width: 100vw;
   height: 100vh;
+  height: 100svh;
   display: flex;
   flex-grow: 1;
   gap: 1px;
@@ -60,6 +63,7 @@ button {
 
 .transition {
   height: 100vh;
+  height: 100svh;
   width: 500vw;
   top: 0;
   left: -500vw;
@@ -95,6 +99,7 @@ nav {
   width: 100vw;
   padding: 0 5%;
   height: 15vh;
+  height: 15svh;
   display: flex;
   justify-content: space-between;
   align-items: center;
