@@ -9,15 +9,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="keyframes.css" />
+    <link rel="stylesheet" href="skills.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <div class="transition">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="div"></div>
+      <div class="div"></div>
+      <div class="div"></div>
+      <div class="div"></div>
+      <div class="div"></div>
     </div>
     <div class="lines">
       <div class="line"></div>
@@ -65,23 +66,52 @@
     <iconify-icon icon="material-symbols:list" id="menu"></iconify-icon>
     <iconify-icon icon="material-symbols:cancel" id="close"></iconify-icon>
     <nav>
-      <a href="skills.html" class="nav-link">What do I bring to the table?</a
+      <a href="skills.html" class="nav-link active"
+        >What do I bring to the table?</a
       ><a href="portfolio.html" class="nav-link">I made that</a
       ><a href="plan.html" class="nav-link">It's all part of the plan</a
       ><a href="contact.html" class="nav-link button">Contact me</a>
     </nav>
-    <main>
-      <p>Hey! I'm Lane.</p>
+    <main id="content1">
+      <p>If we're being honest...</p>
       <p>
-        I'm a web developer and designer who enjoys trying new things.<br />If
-        you enjoy my work, please reach out to chat or hire.
+        Im pretty good with HTML, CSS, JavaScript, and Python - all the
+        basics.<br />
+        Some of the frameworks and libraries I've worked with are Tailwind and
+        React.<br />
+        I use tools like Figma and GPT, which make my life easier and more
+        efficient.
       </p>
-      <a href="skills.html" class="nav-link"
-        >See what this guy's talking about</a
-      >
+      <p>
+        <span>Go on, find out more.</span
+        ><a href="skills.html" class="nav-link button">Visit my Resume</a>
+      </p>
+      <div class="fade" id="fade1">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </main>
+    <main id="content2">
+      <p>My soft skills have never been softer...</p>
+      <p>
+        I'll admit it. I don't know everything there is to know.<br />
+        That's why I love to work with a team, so I can build and learn off of
+        similar minds.<br />
+        This line is here to keep the content the same length.
+      </p>
+      <p>
+        <span>See how I use this in my freelancing business. </span
+        ><a href="skills.html" class="nav-link button">Visit Fizz Snap</a>
+      </p>
+      <div class="fade" id="fade2">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </main>
 
-    <script src="app.js"></script>
+    <script src="skills.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
   </body>
 </html>

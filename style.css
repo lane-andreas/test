@@ -2,41 +2,193 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
 
 body {
   height: 100vh;
   width: 100vw;
   background-color: white;
-  overflow: clip;
+  overflow-x: clip;
+  font-size: calc(1rem + 0.1vw);
+}
+
+a,
+button {
+  background-color: inherit;
+  border: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .follower {
+  translate: -80vw 80vh;
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: black;
-  box-shadow: 0 0 100vh 20px black;
-  top: 0;
+  background-color: #000000;
+  box-shadow: 0 0 90vh 10vh black;
+
   border-top-left-radius: 50%;
   pointer-events: none;
   transition: 0.1s;
+  z-index: -1;
 }
 
 .lines {
-  background-color: transparent;
   z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  pointer-events: none;
   display: flex;
   flex-grow: 1;
   gap: 1px;
+  pointer-events: none;
 }
 .line {
   flex-basis: 100%;
   background-color: white;
+  pointer-events: none;
+}
+
+.transition {
+  height: 100vh;
+  width: 500vw;
+  top: 0;
+  left: -500vw;
+  position: fixed;
+  display: flex;
+  z-index: 1000;
+}
+.transition div {
+  flex: 1;
+}
+.transition div:nth-of-type(1) {
+  background: transparent;
+}
+.transition div:nth-of-type(2) {
+  background: linear-gradient(to right, transparent, white);
+}
+.transition div:nth-of-type(3) {
+  background: rgb(255, 255, 255);
+}
+.transition div:nth-of-type(4) {
+  background: linear-gradient(to right, white, transparent);
+}
+.transition div:nth-of-type(5) {
+  background: transparent;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  pointer-events: all;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 0 5%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (width >= 800px) {
+  nav {
+    translate: 0 !important;
+  }
+}
+
+.nav-link {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.button {
+  opacity: 1;
+  padding: 0.7em 1.7em;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+}
+
+.nav-link:hover,
+main span:hover {
+  opacity: 1;
+}
+
+main {
+  z-index: 200;
+  top: 50%;
+  right: 5%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  translate: 0 -50%;
+}
+
+main p:nth-of-type(1) {
+  text-align: right;
+  margin-bottom: 1em;
+}
+main p:nth-of-type(2) {
+  margin-bottom: 1em;
+}
+main .nav-link {
+  font-style: italic;
+  padding: 0.5em 1.5em;
+  border: 1px solid black;
+  align-self: flex-start;
+  pointer-events: all;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: none;
+}
+
+#menu,
+#close {
+  font-size: calc(2rem + 0.1vw);
+  z-index: 10000;
+  color: #000000;
+  position: fixed;
+  display: none;
+  transition: 0.5s;
+}
+
+#menu {
+  top: 1em;
+  right: 1em;
+}
+
+#close {
+  top: 1em;
+  left: -1em;
+}
+@media (800px > width) {
+  main {
+    left: 5%;
+  }
+  nav {
+    flex-direction: column-reverse;
+    gap: 3em;
+    background-color: white;
+    height: 100vh;
+    justify-content: center;
+    translate: 100vw;
+    transition: translate 0.5s;
+  }
+  #menu,
+  #close {
+    display: unset;
+  }
 }
