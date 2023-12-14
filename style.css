@@ -12,7 +12,7 @@
 
 body {
   height: 100vh;
-  height: 100lvh;
+
   width: 100vw;
   background-color: white;
   overflow-x: clip;
@@ -32,10 +32,8 @@ button {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  height: 100lvh;
   background-color: #000000;
   box-shadow: 0 0 90vh 10vh black;
-
   border-top-left-radius: 50%;
   pointer-events: none;
   transition: 0.1s;
@@ -49,7 +47,6 @@ button {
   left: 0;
   width: 100vw;
   height: 100vh;
-  height: 100lvh;
   display: flex;
   flex-grow: 1;
   gap: 1px;
@@ -63,7 +60,6 @@ button {
 
 .transition {
   height: 100vh;
-  height: 100lvh;
   width: 500vw;
   top: 0;
   left: -500vw;
@@ -99,7 +95,6 @@ nav {
   width: 100vw;
   padding: 0 5%;
   height: 15vh;
-  height: 15lvh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,6 +131,7 @@ main {
   display: flex;
   flex-direction: column;
   translate: 0 -50%;
+  transition: top 1s;
 }
 
 main p:nth-of-type(1) {
@@ -187,6 +183,11 @@ main .nav-link {
     justify-content: center;
     translate: 100vw;
     transition: translate 0.5s;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+  }
+  nav > * {
+    border: none;
   }
   #menu {
     display: unset;
