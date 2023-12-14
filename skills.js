@@ -70,6 +70,4 @@ document.addEventListener("scroll", function () {
 
   fadeC1.style.left = `${100 - scrollPercentage * 1.25}%`;
   fadeC2.style.left = `${100 - scrollPercentage * 1.25}%`;
-
-  console.log(scrollPercentage);
 });

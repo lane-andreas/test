@@ -63,10 +63,10 @@ main br {
     align-self: flex-end;
   }
   .fade {
-    transition: left 1.5s !important;
+    transition: none !important;
   }
   main {
-    transition: clip-path 1.5s !important;
+    transition: none !important;
   }
 }
 
