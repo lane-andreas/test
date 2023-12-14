@@ -1,6 +1,5 @@
 body {
   height: 300vh;
-  height: 300lvh;
 }
 .transition {
   left: -200vw;
@@ -76,4 +75,22 @@ main br {
   border-left: solid 1px black;
   border-right: solid 1px black;
   transition: left 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: clip;
+}
+.fade p {
+  animation: scroll-text 10s 2s infinite forwards;
+  translate: 200%;
+}
+
+@keyframes scroll-text {
+  0% {
+    translate: 200%;
+  }
+  20%,
+  100% {
+    translate: -200%;
+  }
 }
