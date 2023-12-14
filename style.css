@@ -61,10 +61,11 @@ button {
   height: 100vh;
   width: 500vw;
   top: 0;
-  left: -500vw;
   position: fixed;
   display: flex;
   z-index: 1500;
+  left: -200vw;
+  animation: slide-in 2.5s forwards;
 }
 .transition div {
   flex: 1;
@@ -98,7 +99,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-@media (width >= 800px) {
+@media (width >= 1000px) {
   nav {
     translate: 0 !important;
   }
@@ -169,7 +170,7 @@ main .nav-link {
   right: 1em;
 }
 
-@media (800px > width) {
+@media (1000px > width) {
   main {
     left: 0% !important;
     right: 0% !important;
