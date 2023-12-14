@@ -65,7 +65,7 @@ button {
   left: -500vw;
   position: fixed;
   display: flex;
-  z-index: 1000;
+  z-index: 1500;
 }
 .transition div {
   flex: 1;
@@ -155,14 +155,12 @@ main .nav-link {
   pointer-events: none;
 }
 
-#menu,
-#close {
+#menu {
   font-size: calc(2rem + 0.1vw);
-  z-index: 10000;
+  z-index: 1001;
   color: #000000;
   position: fixed;
   display: none;
-  transition: 0.5s;
 }
 
 #menu {
@@ -170,13 +168,11 @@ main .nav-link {
   right: 1em;
 }
 
-#close {
-  top: 1em;
-  left: -1em;
-}
 @media (800px > width) {
   main {
-    left: 5%;
+    left: 0% !important;
+    right: 0% !important;
+    padding: 0 5%;
   }
   nav {
     flex-direction: column-reverse;
@@ -187,8 +183,7 @@ main .nav-link {
     translate: 100vw;
     transition: translate 0.5s;
   }
-  #menu,
-  #close {
+  #menu {
     display: unset;
   }
 }

@@ -27,17 +27,14 @@ navLinks.forEach(function (button) {
 });
 
 const menuB = document.querySelector("#menu");
-const closeB = document.querySelector("#close");
 const navB = document.querySelector("nav");
-
-menuB.addEventListener("click", function () {
-  menuB.style.right = "-1em";
-  navB.style.translate = "0";
-  closeB.style.left = "1em";
-});
-
-closeB.addEventListener("click", function () {
-  menuB.style.right = "1em";
-  navB.style.translate = "100vw";
-  closeB.style.left = "-1em";
-});
+navB.style.translate = "100vw";
+function navMenu() {
+  if (navB.style.translate == "100vw") {
+    menuB.setAttribute("icon", "line-md:menu-to-close-alt-transition");
+    navB.style.translate = "0";
+  } else {
+    menuB.setAttribute("icon", "line-md:close-to-menu-alt-transition");
+    navB.style.translate = "100vw";
+  }
+}

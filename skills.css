@@ -15,7 +15,7 @@ main {
   right: unset;
   transition: clip-path 1s;
   clip-path: polygon(120% -50%, -50% -50%, -50% 150%, 120% 150%);
-  width: min(65ch, 90%);
+  width: min(65ch, 100%);
 }
 main:nth-of-type(2) {
   clip-path: polygon(100% -50%, 120% -50%, 120% 150%, 150% 150%);
@@ -42,6 +42,26 @@ main span:hover {
 
 main .nav-link {
   padding: 0.7em 1.7em;
+}
+
+main br {
+  display: none;
+}
+
+@media (width < 800px) {
+  main p:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-end;
+  }
+  main span {
+    text-align: right;
+    margin-right: 0;
+  }
+  main .nav-link {
+    align-self: flex-end;
+  }
 }
 
 .fade {

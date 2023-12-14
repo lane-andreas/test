@@ -63,8 +63,12 @@
       <div class="line hide"></div>
     </div>
     <div class="follower parallax" id="follower"></div>
-    <iconify-icon icon="material-symbols:list" id="menu"></iconify-icon>
-    <iconify-icon icon="material-symbols:cancel" id="close"></iconify-icon>
+    <iconify-icon
+      icon="line-md:close-to-menu-alt-transition"
+      id="menu"
+      onclick="navMenu()"
+    ></iconify-icon>
+
     <nav>
       <a href="skills.html" class="nav-link active"
         >What do I bring to the table?</a
@@ -83,8 +87,11 @@
         efficient.
       </p>
       <p>
-        <span>Go on, find out more.</span
-        ><a href="skills.html" class="nav-link button">Visit my Resume</a>
+        <span>Go on, find out more.</span><br /><a
+          href="skills.html"
+          class="nav-link button"
+          >Visit my Resume</a
+        >
       </p>
       <div class="fade" id="fade1"></div>
     </main>
@@ -97,7 +104,7 @@
         This line is here to keep the content the same length.
       </p>
       <p>
-        <span>See how I use this in my freelancing business. </span
+        <span>See how I use this in my freelancing business.<br /></span
         ><a href="skills.html" class="nav-link button">Visit Fizz Snap</a>
       </p>
       <div class="fade" id="fade2"></div>

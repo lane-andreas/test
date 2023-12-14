@@ -26,6 +26,19 @@ navLinks.forEach(function (button) {
   });
 });
 
+const menuB = document.querySelector("#menu");
+const navB = document.querySelector("nav");
+navB.style.translate = "100vw";
+function navMenu() {
+  if (navB.style.translate == "100vw") {
+    menuB.setAttribute("icon", "line-md:menu-to-close-alt-transition");
+    navB.style.translate = "0";
+  } else {
+    menuB.setAttribute("icon", "line-md:close-to-menu-alt-transition");
+    navB.style.translate = "100vw";
+  }
+}
+
 const mainC1 = document.querySelector("#content1");
 const mainC2 = document.querySelector("#content2");
 const fadeC1 = document.querySelector("#fade1");
@@ -57,4 +70,6 @@ document.addEventListener("scroll", function () {
 
   fadeC1.style.left = `${100 - scrollPercentage * 1.25}%`;
   fadeC2.style.left = `${100 - scrollPercentage * 1.25}%`;
+
+  console.log(scrollPercentage);
 });
