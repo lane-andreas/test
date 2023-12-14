@@ -16,13 +16,16 @@ const transition = document.querySelector(".transition");
 
 navLinks.forEach(function (button) {
   button.addEventListener("click", function (event) {
-    event.preventDefault();
+    target = button.getAttribute("target");
+    if (target == "_blank") {
+    } else {
+      event.preventDefault();
 
-    transition.style.animation = "slide-out 1s";
-
-    setTimeout(function () {
-      window.location.href = button.getAttribute("href");
-    }, 900);
+      transition.style.animation = "slide-out 1s";
+      setTimeout(function () {
+        window.location.href = button.getAttribute("href");
+      }, 900);
+    }
   });
 });
 
