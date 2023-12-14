@@ -62,6 +62,12 @@ main br {
   main .nav-link {
     align-self: flex-end;
   }
+  .fade {
+    transition: left 0.5s !important;
+  }
+  main {
+    transition: clip-path 0.5s !important;
+  }
 }
 
 .fade {
