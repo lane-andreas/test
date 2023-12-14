@@ -1,16 +1,18 @@
 @keyframes slide-out {
-  from {
+  0% {
     left: -500vw;
   }
-  to {
+  90%,
+  100% {
     left: -200vw;
   }
 }
 @keyframes slide-in {
-  from {
+  0% {
     left: -200vw;
   }
-  to {
+  90%,
+  100% {
     left: 100vw;
   }
 }

@@ -18,11 +18,11 @@ navLinks.forEach(function (button) {
   button.addEventListener("click", function (event) {
     event.preventDefault();
 
-    transition.style.animation = "slide-out 1s forwards";
+    transition.style.animation = "slide-out 1s";
 
     setTimeout(function () {
       window.location.href = button.getAttribute("href");
-    }, 1000);
+    }, 900);
   });
 });
 
