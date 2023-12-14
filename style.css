@@ -12,7 +12,7 @@
 
 body {
   height: 100vh;
-  height: 100svh;
+  height: 100lvh;
   width: 100vw;
   background-color: white;
   overflow-x: clip;
@@ -32,7 +32,7 @@ button {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  height: 100svh;
+  height: 100lvh;
   background-color: #000000;
   box-shadow: 0 0 90vh 10vh black;
 
@@ -49,7 +49,7 @@ button {
   left: 0;
   width: 100vw;
   height: 100vh;
-  height: 100svh;
+  height: 100lvh;
   display: flex;
   flex-grow: 1;
   gap: 1px;
@@ -63,7 +63,7 @@ button {
 
 .transition {
   height: 100vh;
-  height: 100svh;
+  height: 100lvh;
   width: 500vw;
   top: 0;
   left: -500vw;
