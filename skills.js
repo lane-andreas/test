@@ -63,14 +63,34 @@ document.addEventListener("scroll", function () {
   const scrollPercentage =
     (currentScrollPosition / totalScrollableHeight) * 100;
 
-  mainC1.style.clipPath = `polygon(${
-    120 - scrollPercentage * 1.25
-  }% -50%,  -50% -50%, -50% 150%, ${120 - scrollPercentage * 1.25}% 150%)`;
+  mainC1.animate(
+    {
+      clipPath: `polygon(${
+        120 - scrollPercentage * 1.25
+      }% -50%,  -50% -50%, -50% 150%, ${120 - scrollPercentage * 1.25}% 150%)`,
+    },
+    { duration: 1000, fill: "forwards" }
+  );
 
-  mainC2.style.clipPath = `polygon(100% -50%, ${
-    120 - scrollPercentage * 1.25
-  }% -50%, ${120 - scrollPercentage * 1.25}% 150%, 100% 150%)`;
+  mainC2.animate(
+    {
+      clipPath: `polygon(100% -50%, ${120 - scrollPercentage * 1.25}% -50%, ${
+        120 - scrollPercentage * 1.25
+      }% 150%, 100% 150%)`,
+    },
+    { duration: 1000, fill: "forwards" }
+  );
 
-  fadeC1.style.left = `${100 - scrollPercentage * 1.25}%`;
-  fadeC2.style.left = `${100 - scrollPercentage * 1.25}%`;
+  fadeC1.animate(
+    {
+      left: `${100 - scrollPercentage * 1.25}%`,
+    },
+    { duration: 1000, fill: "forwards" }
+  );
+  fadeC2.animate(
+    {
+      left: `${100 - scrollPercentage * 1.25}%`,
+    },
+    { duration: 1000, fill: "forwards" }
+  );
 });

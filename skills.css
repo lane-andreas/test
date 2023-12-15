@@ -13,7 +13,7 @@ body {
 main {
   left: 5%;
   right: unset;
-  transition: clip-path 1s;
+
   clip-path: polygon(120% -50%, -50% -50%, -50% 150%, 120% 150%);
   width: min(65ch, 100%);
 }
@@ -61,12 +61,6 @@ main br {
   }
   main .nav-link {
     align-self: flex-end;
-  }
-  .fade {
-    transition: none !important;
-  }
-  main {
-    transition: none !important;
   }
 }
 
